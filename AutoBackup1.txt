@@ -1,0 +1,5 @@
+@echo off
+cd /d "C:\Users\defaultuser0\archivebox"
+
+:: Run Rclone, but write the results to a text file instead of the screen
+.\rclone.exe copy "data/archive" b2:my-b2-bucket-name --transfers 4 --log-file="backup_log.txt" --log-level=INFO

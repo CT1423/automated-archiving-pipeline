@@ -1,0 +1,15 @@
+@echo off
+cd /d "C:\Users\defaultuser0\archivebox"
+echo ==============================================
+echo  Backing up your Archive to Backblaze B2...
+echo ==============================================
+echo.
+
+:: This command uploads only the NEW files
+.\rclone.exe copy "data/archive" b2:my-b2-bucket-name -P --transfers 8
+
+echo.
+echo ==============================================
+echo  Backup Complete! Your news is safe.
+echo ==============================================
+pause
