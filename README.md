@@ -1,4 +1,4 @@
-# [Project Name] e.g., Self-Hosted News Archiving Pipeline
+Self-Hosted News Archiving Pipeline
 
 ![Project Banner/Screenshot](path/to/screenshot.png) 
 ## 📖 Project Overview
